@@ -1,14 +1,14 @@
 const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
-  const domain = event.queryStringParameters.domain || "onyxcollaborative.com";
+  const domain = event.queryStringParameters.domain;
 
   const params = new URLSearchParams({
-    ApiUser: "OnyxCollaborative",
-    ApiKey: "260a57e6c3dc494fb2601cedf9720039",
-    UserName: "OnyxCollaborative",
+    ApiUser: process.env.NAMECHEAP_API_USER ,
+    ApiKey: process.env.NAMECHEAP_API_KEY,
+    UserName: process.env.NAMECHEAP_USERNAME,
     Command: "namecheap.domains.check",
-    ClientIp: "50.37.90.222",
+    ClientIp: process.env.CLIENT_IP,
     DomainList: domain
   });
 
@@ -31,4 +31,5 @@ exports.handler = async (event, context) => {
     };
   }
 };
+
 
