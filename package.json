@@ -1,0 +1,13 @@
+{
+  "name": "onyxcollaborative-check-domain",
+  "version": "1.0.0",
+  "description": "Netlify Function to check domain availability using Namecheap API",
+  "main": "netlify/functions/check-domain.js",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "license": "MIT"
+}
