@@ -1,7 +1,7 @@
 name = "onyxcollaborative-check-domain"
 main = "check.js"
 type = "javascript"
-account_id = "your_account_id_here"
+account_id = "60ea56fd96c28f2ee0386655a8797600"
 
 # Optionally, if using routes:
 # routes = ["https://your-custom-domain.com/*"]
