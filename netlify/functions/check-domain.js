@@ -4,11 +4,11 @@ exports.handler = async (event, context) => {
   const domain = event.queryStringParameters.domain;
   const apiUrl = 'https://api.namecheap.com/xml.response';
   const params = new URLSearchParams({
-    ApiUser: process.env.NAMECHEAP_API_USER,  // Store in environment variables
-    ApiKey: process.env.NAMECHEAP_API_KEY,
-    UserName: process.env.NAMECHEAP_USERNAME,
+    ApiUser: "OnyxCollaborative",
+    ApiKey: "260a57e6c3dc494fb2601cedf9720039",
+    UserName: "OnyxCollaborative",
     Command: 'namecheap.domains.check',
-    ClientIp: process.env.CLIENT_IP,
+    //ClientIp: process.env.CLIENT_IP,
     DomainList: domain
   });
   
