@@ -4,11 +4,11 @@ exports.handler = async (event, context) => {
   const domain = event.queryStringParameters.domain || "onyxcollaborative.com";
 
   const params = new URLSearchParams({
-    ApiUser: process.env.NAMECHEAP_API_USER || "OnyxCollaborative",
-    ApiKey: process.env.NAMECHEAP_API_KEY || "260a57e6c3dc494fb2601cedf9720039",
-    UserName: process.env.NAMECHEAP_USERNAME || "OnyxCollaborative",
+    ApiUser: "OnyxCollaborative",
+    ApiKey: "260a57e6c3dc494fb2601cedf9720039",
+    UserName: "OnyxCollaborative",
     Command: "namecheap.domains.check",
-    ClientIp: process.env.CLIENT_IP || "50.37.90.222",
+    ClientIp: "50.37.90.222",
     DomainList: domain
   });
 
