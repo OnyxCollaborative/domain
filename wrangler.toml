@@ -1,4 +1,4 @@
-name = "onyxcollaborative-check-domain"
+name = "domain"
 main = "check.js"
 type = "javascript"
 account_id = "60ea56fd96c28f2ee0386655a8797600"
